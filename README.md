@@ -17,42 +17,44 @@ This project implements a simulated arena where players can fight. It includes f
   Ensure you have Go installed and configured properly.
 
 
-Directory Structure Overview
-arena
 
-service
-service.go: Defines the interface for arena services.
-service_fight_impl.go: Implements methods for simulating fights between players.
-service_fight_impl_test.go: Unit tests for the fight implementation.
-di
+ ## Directory Structure Overview
 
-container.go: Configures dependency injection for the project.
-dice
+### arena
+- **service**
+  - `service.go`: Defines the interface for arena services.
+  - `service_fight_impl.go`: Implements methods for simulating fights between players.
+  - `service_fight_impl_test.go`: Unit tests for the fight implementation.
 
-service
-service.go: Defines the interface for dice services.
-service_impl_rolldice.go: Implements methods for rolling dice.
-service_impl_rolldice_test.go: Unit tests for the dice rolling implementation.
-player
+### di
+- `container.go`: Configures dependency injection for the project.
 
-model
-models.go: Defines the data model for players.
-service
-service.go: Defines the interface for player services.
-service_is_alive_impl.go: Implements methods for checking if a player is alive.
-service_is_alive_impl_test.go: Unit tests for player alive status implementation.
-service_take_damage_impl.go: Implements methods for applying damage to players.
-service_take_damage_impl_test.go: Unit tests for applying damage to players.
-service_validate_player_impl.go: Implements methods for validating player attributes.
-service_validate_player_impl_test.go: Unit tests for player validation.
+### dice
+- **service**
+  - `service.go`: Defines the interface for dice services.
+  - `service_impl_rolldice.go`: Implements methods for rolling dice.
+  - `service_impl_rolldice_test.go`: Unit tests for the dice rolling implementation.
 
-Running the Project
-Navigate to the project directory:
-bash
-cd swiggy-Assignment
+### player
+- **model**
+  - `models.go`: Defines the data model for players.
+- **service**
+  - `service.go`: Defines the interface for player services.
+  - `service_is_alive_impl.go`: Implements methods for checking if a player is alive.
+  - `service_is_alive_impl_test.go`: Unit tests for player alive status implementation.
+  - `service_take_damage_impl.go`: Implements methods for applying damage to players.
+  - `service_take_damage_impl_test.go`: Unit tests for applying damage to players.
+  - `service_validate_player_impl.go`: Implements methods for validating player attributes.
+  - `service_validate_player_impl_test.go`: Unit tests for player validation.
 
-Run the project:
+## Running the Project
+1. **Navigate to the project directory:**
+   ```bash
+   cd swiggy-Assignment
+2. **Run the Project:**
+To run the project, execute the following command:
+  ```bash
+  go run main.go
 
-bash
-go run main.go
+
 
